@@ -15,7 +15,7 @@ class rBergomi(object):
         self.dt = 1.0/self.n # Step size
         self.s = int(self.n * self.T) # Steps
         self.t = np.linspace(0, self.T, 1 + self.s)[np.newaxis,:] # Time grid
-        self.a = a # Alpha
+        self.a = a # Alpha, Alpha = H - 0.5
         self.N = N # Paths
 
         # Construct hybrid scheme correlation structure for kappa = 1
